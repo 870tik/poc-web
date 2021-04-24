@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: yellow;
+}
+
+.mv {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../data/photo/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.mv_textBox {
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mv_textBox h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.mv_textBox h2 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content_boxRight {
+  width: 95%;
+  margin: 32px auto;
+  height: 400px;
+  display: flex;
+  background-color: white;
+}
+
+.content_boxLeft {
+  width: 95%;
+  margin: 32px auto;
+  height: 400px;
+  display: flex;
+  background-color: white;
+}
+
+.content__imageBox {
+  height: 400px;
+}
+
+.content__imageBox img {
+  height: 100%;
+}
+
+.content__textBox {
+  margin-left: 16px;
+}
+
+.sub {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../data/photo/8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sub_textBox {
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.detail {
+  margin: 32px;
+}
+
+.detail_contentBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail_contentBox__left {
+  width: 32%;
+  height: 600px;
+  background-image: url(../data/photo/6.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.detail_contentBox__center {
+  width: 32%;
+  height: 600px;
+  background-image: url(../data/photo/7.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.detail_contentBox__right {
+  width: 32%;
+  height: 600px;
+  background-image: url(../data/photo/9.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.detail_contentBox__text {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
