@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: white;
   font-feature-settings: "palt";
+  overflow-x: hidden;
 }
 
 .header {
@@ -67,7 +68,7 @@ body {
 }
 
 .content_box__right .content_textBox {
-  left: 0;
+  left: 16vw;
 }
 
 .content_imgBox {
@@ -75,9 +76,20 @@ body {
 }
 
 .content_imgBox img {
-  width: calc(70% - 32px);
   height: 500px;
   object-fit: cover;
+}
+
+.smallImg {
+  width: calc(40% - 32px);
+}
+
+.middiumImg {
+  width: calc(55% - 32px);
+}
+
+.largeImg {
+  width: calc(70% - 32px);
 }
 
 
@@ -131,62 +143,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-.content_boxRight {
-  width: calc(100vw - 128px);
-  margin: 64px auto;
-  height: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-}
-
-.content_boxLeft {
-  width: calc(100vw - 128px);
-  margin: 64px auto;
-  height: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-}
-
-.content__imageBox {
-  height: 500px;
-}
-
-.content__imageBox img {
-  height: 100%;
-}
-
-.content__textBox {
-  width: 800px;
-  margin: 0 64px 0 64px;
-}
-
-.content__textBox h2 {
-  font-size: 40px;
-  font-weight: 300;
-  margin: 0;
-  line-height: 1.2em;
-  letter-spacing: 0.15em;
-}
-
-.content__textBox h3 {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  margin: 8px 0 16px 2px;
-}
-
-.content__textBox p {
-  font-size: 20px;
-  font-weight: 300;
-  margin: 32px 0 32px 0;
-  letter-spacing: 0.1em;
-}
-
-.content__textBox__button {
+.content_textBox__button {
   width: 160px;
   height: 48px;
   font-size: 16px;
@@ -202,8 +159,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* transform: scale(0.8);
-  transform: translate(0 200px); */
 }
 
 .sub_textBox {
@@ -221,67 +176,68 @@ body {
   font-size: 40px;
   font-weight: 300;
   margin: 0;
+  line-height: 1.2em;
+  letter-spacing: 0.15em;
   color: white;
 }
 
 .sub_textBox h2 {
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.5em;
-  margin: 8px 0 16px 0;
+  margin: 16px 0 32px 0;
+  letter-spacing: 0.1em;
   color: white;
 }
 
 .sub_textBox button {
-  width: 240px;
-  height: 44px;
+  width: 280px;
+  height: 48px;
   font-size: 16px;
-  border-radius: 22px;
+  border-radius: 24px;
   background-color: white;
   border: solid 1px #999999;
 }
 
 .detail {
-  margin: 32px;
+  margin: 64px 0;
 }
 
 .detail_contentBox {
   width: calc(100vw - 128px);
-  margin: 64px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.detail_contentBox__left {
+.detail_contentBox__inner {
   width: 32%;
-  height: 600px;
+  height: 40vw;
   border-radius: 8px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/6.jpg);
   background-size: cover;
   position: relative;
+  transition-duration: 0.3s;
+}
+
+.detail_contentBox__inner:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+}
+
+.detail_contentBox__left {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/6.jpg);
 }
 
 .detail_contentBox__center {
-  width: 32%;
-  height: 600px;
-  border-radius: 8px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/7.jpg);
-  background-size: cover;
-  position: relative;
 }
 
 .detail_contentBox__right {
-  width: 32%;
-  height: 600px;
-  border-radius: 8px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/9.jpg);
-  background-size: cover;
-  position: relative;
 }
 
 .detail_contentBox__text {
   position: absolute;
-  left: 16px;
+  left: 24px;
   bottom: 16px;
   font-size: 24px;
   font-weight: 300;
