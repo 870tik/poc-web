@@ -153,11 +153,9 @@ body {
 }
 
 .sub {
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .sub_textBox {
@@ -170,6 +168,7 @@ body {
   bottom: 0;
   left: 164px;
   margin: auto;
+  z-index: 2;
 }
 
 .sub_textBox h1 {
@@ -199,6 +198,16 @@ body {
 }
 
 .sub_imgBox {
+  width: 92vw;
+  height: 92vh;
+  transform: translateY(10vh);
+  margin: 0 auto;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out
+}
+
+.sub_imgBox__img {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/8.jpg);
@@ -220,13 +229,15 @@ body {
 .detail_contentBox__inner {
   width: 32%;
   height: 40vw;
-  border-radius: 8px;
+  border-radius: 16px;
   background-size: cover;
   position: relative;
+  transform: translate3d(0,0,0);
   transition-duration: 0.3s;
 }
 
 .detail_contentBox__inner:hover {
+  transform: translate3d(0,0,0);
   transform: scale(1.03);
   transition-duration: 0.3s;
 }

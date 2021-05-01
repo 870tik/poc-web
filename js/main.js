@@ -1,4 +1,4 @@
-var subContent = document.getElementById("sub");
+var subContent = document.getElementById("subImg");
 var subContentY;
 
 window.onload = function() {
@@ -9,11 +9,13 @@ window.onscroll = function() {
   var py = subContent.getBoundingClientRect().top;
   var scroll = window.pageYOffset;
   var height = subContent.getBoundingClientRect().height;
-  if(py < height && ((height - py) / height) <= 1) {
-    subContent.style.width = (0.8 + ((height - py) / height)/10 * 2) * 100 + 'vw';
-    subContent.style.height = (0.8 + ((height - py) / height)/10 * 2) * 100 + 'vh';
+  if(py < height - height / 10 && ((height - py) / height) <= 1) {
+    subContent.style.width = (0.92 + ((height - py) / height)/10 * 0.8) * 100 + 'vw';
+    subContent.style.height = (0.92 + ((height - py) / height)/10 * 0.8) * 100 + 'vh';
+    subContent.style.transform = 'translateY(' + (0.1 - ((height - py) / height)/10) * 100 + 'vh)';
   } else if(py < height && ((height - py) / height) > 1) {
     subContent.style.width = '100vw';
     subContent.style.height = '100vh';
+    subContent.style.transform = 'translateY(0vh)';
   }
 }
