@@ -305,42 +305,43 @@ body {
     font-size: 16px;
     margin: 16px 0 0 0;
   }
-  
+
   .content_box__left {
     margin: 48px auto;
-    height: 500px;
+    height: 414px;
     width: calc(100vw - 48px);
   }
-  
+
   .content_box__right {
     margin: 48px auto;
+    height: 414px;
     width: calc(100vw - 48px);
   }
-  
+
   .content_box__left .content_textBox {
     right: 0;
     left: 0;
     margin: auto;
   }
-  
+
   .content_box__right .content_textBox {
     right: 0;
     left: 0;
     margin: auto;
   }
-  
+
   .content_imgBox {
     height: 200px;
   }
-  
+
   .content_imgBox img {
     height: 200px;
   }
-  
+
   .smallImg {
     width: 100%;
   }
-  
+
   .middiumImg {
     width: 100%;
   }
@@ -352,30 +353,30 @@ body {
   .content_textBox {
     position: absolute;
     width: 100%;
-    height: inherit;
+    height: 194px;
     top: 220px;
     bottom: inherit;
     margin: inherit;
     z-index: 2;
   }
-  
+
   .content_textBox h2 {
     font-size: 20px;
-    margin-top: 32px;
+    margin-top: 0;
   }
-  
+
   .content_textBox h3 {
     font-size: 12px;
     margin: 8px 0 16px 2px;
   }
-  
+
   .content_textBox p {
     font-size: 16px;
     font-weight: 300;
     margin: 16px 0;
     letter-spacing: 0.1em;
   }
-  
+
   .content_textBox__button {
     width: 160px;
     height: 44px;
@@ -384,13 +385,13 @@ body {
     display: block;
     margin: 0 auto;
   }
-  
+
   .sub {
     width: 100vw;
     height: 100vh;
     position: relative;
   }
-  
+
   .sub_textBox {
     width: calc(100% - 48px);
     max-width: 500px;
