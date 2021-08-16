@@ -1,0 +1,36 @@
+body{
+  width: 100%;
+  line-height: 1.8em;
+  font-feature-settings: "pwid";
+  margin: 0;
+}
+
+.background {
+  width: 100vw;
+  height: 650px;
+  position: absolute;
+  top: 140px;
+  z-index: -1;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.text {
+  width: 80%;
+  max-width: 1100px;
+  margin: 300px auto;
+}
+
+.title {
+  font-size: 64px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.sub_title {
+  text-align: center;
+}
+
+.main_text {
+  text-align: center;
+}

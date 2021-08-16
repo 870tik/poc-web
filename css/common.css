@@ -1,7 +1,43 @@
 body{
-  width: 80%;
-  max-width: 990px;
-  margin: 200px auto;
+  width: 100%;
   line-height: 1.8em;
   font-feature-settings: "pwid";
+  margin: 0;
+}
+
+.header_contentBox {
+  width: 100%;
+  height: 140px;
+  background-color: #212121;
+  display: flex;
+}
+
+.header_innerBox {
+  width: 80%;
+  margin: 0 auto;
+  height: 140px;
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  width: 75px;
+  height: 75px;
+}
+
+.header_list {
+  display: flex;
+  color: white;
+  list-style: none;
+}
+
+.header_list li {
+  padding: 0 32px;
+  border-right: solid 1px #fff;
+}
+
+.header_list li:last-child {
+  border-right: none;
 }
