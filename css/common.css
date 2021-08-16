@@ -1,0 +1,7 @@
+body{
+  width: 80%;
+  max-width: 990px;
+  margin: 200px auto;
+  line-height: 1.8em;
+  font-feature-settings: "pwid";
+}

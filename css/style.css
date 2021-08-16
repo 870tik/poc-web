@@ -144,12 +144,17 @@ body {
 }
 
 .content_textBox__button {
+  display: block;
   width: 160px;
   height: 48px;
   font-size: 16px;
   border-radius: 24px;
+  text-align: center;
+  line-height: 48px;
   background-color: white;
   border: solid 1px #999999;
+  text-decoration: none;
+  color: #000000;
 }
 
 .sub {
