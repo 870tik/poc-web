@@ -1,5 +1,8 @@
 var subContent = document.getElementById("subImg");
 var subContentY;
+var menuText = document.getElementById("menuText");
+var menuSp = document.getElementById("menuDrower");
+var pos = 0;
 
 window.onload = function() {
   AOS.init();
@@ -17,5 +20,20 @@ window.onscroll = function() {
     subContent.style.width = '100vw';
     subContent.style.height = '100vh';
     subContent.style.transform = 'translateY(0vh)';
+  }
+}
+
+function drower() {
+  switch(pos){
+    case 0 :
+      menuText.style.top = pos + "vh";
+      pos = -100;
+      menuSp.classList.add('active');
+      break;
+    case -100:
+      menuText.style.top = pos + "vh";
+      pos = 0;
+      menuSp.classList.remove('active');
+      break;
   }
 }

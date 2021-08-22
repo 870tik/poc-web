@@ -21,12 +21,17 @@
     <header class="header_contentBox">
       <div class="header_innerBox">
         <a href="../index.html"><img class="header_logo" src="./data/assets/logo.png" alt="POCロゴ"/></a>
-        <nav class="header_list">
+        <nav class="header_list" id="menuText">
           <li>POC</li>
           <li>POCについて</li>
           <li>製品</li>
           <li>インパクト</li>
         </nav>
+        <a id="menuDrower" onclick="drower()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
     </header>
     <section class="mv">
@@ -115,7 +120,16 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="footer_contentBox">
+      <div class="footer_innerBox">
+        <nav class="footer_list">
+          <li>プライバシーポリシー</li>
+          <li>利用規約</li>
+          <li>お問い合わせ</li>
+          <li>English</li>
+        </nav>
+        <p class="copyright">PRE ORGANIC COTTON PROGRAM ® All Rights Reserved.</p>
+      </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
