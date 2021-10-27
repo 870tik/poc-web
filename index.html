@@ -18,26 +18,35 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
   </head>
   <body>
-    <header class="header_contentBox">
-      <div class="header_innerBox">
-        <a href="../index.html"><img class="header_logo" src="./data/assets/logo.png" alt="POCロゴ"/></a>
-        <nav class="header_list" id="menuText">
-          <li>POC</li>
-          <li>POCについて</li>
-          <li>製品</li>
-          <li>インパクト</li>
+    <header class="header-contentBox">
+      <div class="header-innerBox">
+        <a href="../index.html"><img class="header-logo" src="./data/assets/logo.png" alt="POCロゴ"/></a>
+        <nav class="header-list">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./html/about.html">POCについて</a></li>
+          <li><a href="./index.html#product">プロダクト</a></li>
+          <li><a href="./html/impact.html">インパクト</a></li>
         </nav>
+      </div>
+      <div class="header-contentBox__navBox">
+        <a id="hiddenArea" onclick="drower()"></a>
         <a id="menuDrower" onclick="drower()">
           <span></span>
           <span></span>
           <span></span>
         </a>
+        <nav class="header-list__sp" id="menuText">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./html/about.html">POCについて</a></li>
+          <li><a href="./html/product.html">プロダクト</a></li>
+          <li><a href="./html/impact.html">インパクト</a></li>
+        </nav>
       </div>
     </header>
     <section class="mv">
       <div class="mv_textBox">
-        <h1>リニューアル後の思想など</h1>
-        <h2>POC（プレオーガニックコットン）はコットン農家からブランドや小売店まで、オーガニックコットンのサプライチェーンに関わる全ての方々にソリューションをお届けします。</h2>
+        <h1>プレオーガニックコットンプログラム</h1>
+        <h2>私たちは「プレオーガニックコットン(POC)」の活動を通して、インドの農家と世界の消費者を繋ぎ、地球にも人にも優しいオーガニックコットン栽培の拡大に努めています。</h2>
       </div>
     </section>
     <section class="content">
@@ -47,11 +56,11 @@
         </div>
         <div class="content_textBox">
           <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">
-            <h2>プレオーガニックコットン（POC）とは？</h2>
-            <h3>WHAT'S PREORGANIC COTTON</h3>
+            <h2>わたしたちのミッション</h2>
+            <h3>MISSION</h3>
           </div>
-          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">プレオーガニックコットンとは、オーガニックコットンの認定までに必要な３年間の無農薬栽培期間に育てられたコットンのことです。プレオーガニックコットンの購入を通じて、インドのコットン生産者のオーガニック農法への転換を支援することができます。生産者がオーガニック農法に転換していくことで、生産者の労働環境や生活環境の改善、そして土壌汚染や地球温暖化などの地球環境の改善につながっていきます。私たちコットンを着る消費者がプレオーガニックコットンを選ぶことで、生産者のより良い生活と環境をより良くしていくことができます。</p>
-          <a href="./html/about.html" class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</a>
+          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">環境や人権に配慮したサステナブルな社会を実現するために</p>
+          <a href="./html/mission.html" class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</a>
         </div>
       </div>
       <div class="content_box__right">
@@ -60,11 +69,11 @@
         </div>
         <div class="content_textBox">
           <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">
-            <h2>わたしたちのミッション</h2>
-            <h3>MISSION</h3>
+            <h2>消費者の方に知って欲しいこと</h2>
+            <h3>TO COUSTOMERS</h3>
           </div>
-          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">わたしたちのアプローチの説明が2行ほど入ります。わたしたちのアプローチの説明が2行ほど入ります。</p>
-          <a class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</a>
+          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">1%のオーガニックを増やすことにつながる取り組みとして</p>
+          <a href="./html/customers.html" class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</a>
         </div>
       </div>
       <div class="content_box__left">
@@ -73,32 +82,19 @@
         </div>
         <div class="content_textBox">
           <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">
-            <h2>なぜオーガニックコットン？</h2>
-            <h3>APPROARCH</h3>
+            <h2>POCが起こす変化</h2>
+            <h3>CHANGES CAUSED by POC</h3>
           </div>
-          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">わたしたちのアプローチの説明が2行ほど入ります。わたしたちのアプローチの説明が2行ほど入ります。</p>
-          <button class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</button>
-        </div>
-      </div>
-      <div class="content_box__right">
-        <div class="content_imgBox">
-          <img src="./data/photo/7.jpg" alt="" class="largeImg" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-        </div>
-        <div class="content_textBox">
-          <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">
-            <h2>なぜPOC？</h2>
-            <h3>WHY POC</h3>
-          </div>
-          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">POCの説明が2行ほど入ります。POCの説明が2行ほど入ります。POCの説明が2行ほど入ります。</p>
-          <button class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</button>
+          <p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">あらゆるポジティブな変化を世の中へもたらすためにために</p>
+          <a href="./html/change.html" class="content_textBox__button" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">詳しく見る</a>
         </div>
       </div>
     </section>
     <section class="sub" id="sub">
       <div class="sub_textBox" id="sub_textBox">
-        <h1 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">POCについて</h1>
-        <h2 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">プレオーガニックコットンプログラムは、持続可能な繊維産業の実現という共通の志を持つ、伊東中商事株式会社と株式会社kurkku alternativeの2社による共同事業です。</h2>
-        <button data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700">チームについて詳しく見る</button>
+        <h1 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">POCのあゆみ</h1>
+        <h2 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="500">プレオーガニックコットンプログラムの始まりは2007年に遡ります。</h2>
+        <a href="./html/steps.html" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="700" class="sub_textBox_button">POCのあゆみについて詳しく見る</a>
       </div>
       <div class="sub_imgBox" id="subImg">
         <div class="sub_imgBox__img"></div>
@@ -106,27 +102,37 @@
     </section>
     <section class="detail">
       <div class="detail_contentBox">
-        <div class="detail_contentBox__inner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-          <p class="detail_contentBox__text">プレオーガニックコットンの歩み</p>
+        <a href="./html/impact.html#environment" class="detail_contentBox__inner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+          <p class="detail_contentBox__text">環境面</p>
           <div class="detail_contentBox__img detail_contentBox__left"></div>
-        </div>
-        <div class="detail_contentBox__inner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">
-          <p class="detail_contentBox__text">POCの歴史</p>
+        </a>
+        <a href="./html/impact.html#health" class="detail_contentBox__inner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="300">
+          <p class="detail_contentBox__text">インド農家の健康</p>
           <div class="detail_contentBox__img detail_contentBox__center"></div>
-        </div>
-        <div class="detail_contentBox__inner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="600">
-          <p class="detail_contentBox__text">パートナー</p>
+        </a>
+        <a href="./html/impact.html#income" class="detail_contentBox__inner" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="600">
+          <p class="detail_contentBox__text">インド農家の収入</p>
           <div class="detail_contentBox__img detail_contentBox__right"></div>
-        </div>
+        </a>
+      </div>
+    </section>
+    <section class="product" id="product">
+      <h2>プロダクト</h2>
+      <div class="product__inner">
+        <div class="product__inner__img product__inner__item1"></div>
+        <div class="product__inner__img product__inner__item2"></div>
+        <div class="product__inner__img product__inner__item3"></div>
+        <div class="product__inner__img product__inner__item4"></div>
       </div>
     </section>
     <footer class="footer_contentBox">
       <div class="footer_innerBox">
         <nav class="footer_list">
-          <li>プライバシーポリシー</li>
-          <li>利用規約</li>
-          <li>お問い合わせ</li>
-          <li>English</li>
+          <li><a href="./html/privacy-policy.html">プライバシーポリシー</a></li>
+          <li><a href="./html/terms.html">利用規約</a></li>
+          <li><a href="./html/faq.html">FAQ</a></li>
+          <li><a href="./html/contact.html">お問い合わせ</a></li>
+          <li><a href="./en/index.html">English</a></li>
         </nav>
         <p class="copyright">PRE ORGANIC COTTON PROGRAM ® All Rights Reserved.</p>
       </div>

@@ -1,6 +1,7 @@
 var subContent = document.getElementById("subImg");
 var subContentY;
 var menuText = document.getElementById("menuText");
+var hiddenArea = document.getElementById("hiddenArea");
 var menuSp = document.getElementById("menuDrower");
 var pos = 0;
 
@@ -26,12 +27,22 @@ window.onscroll = function() {
 function drower() {
   switch(pos){
     case 0 :
-      menuText.style.top = pos + "vh";
-      pos = -100;
+      menuText.style.right = pos + "vw";
+      Object.assign(hiddenArea.style,{
+        opacity:"0.5",
+        zIndex:"10000"
+        });
+      pos = -60;
       menuSp.classList.add('active');
       break;
-    case -100:
-      menuText.style.top = pos + "vh";
+    case -60:
+      menuText.style.right = pos + "vw";
+      // hiddenArea.style.opacity = "0"
+      Object.assign(hiddenArea.style,{
+        opacity:"0",
+        zIndex:"-10000"
+        });
+      hiddenArea.style.zIndex = "-10000"
       pos = 0;
       menuSp.classList.remove('active');
       break;

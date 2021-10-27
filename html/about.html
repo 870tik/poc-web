@@ -15,37 +15,56 @@
     <link rel="icon" href="">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../css/other.css" type="text/css" />
   </head>
   <body>
-    <header class="header_contentBox">
-      <div class="header_innerBox">
-        <a href="../index.html"><img class="header_logo" src="../data/assets/logo.png" alt="POCロゴ"/></a>
-        <nav class="header_list">
-          <li>POC</li>
-          <li>POCについて</li>
-          <li>製品</li>
-          <li>インパクト</li>
+    <header class="header-contentBox">
+      <div class="header-innerBox">
+        <a href="../index.html"><img class="header-logo" src="../data/assets/logo.png" alt="POCロゴ"/></a>
+        <nav class="header-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./about.html">POCについて</a></li>
+          <li><a href="../index.html#product">プロダクト</a></li>
+          <li><a href="./impact.html">インパクト</a></li>
+        </nav>
+      </div>
+      <div class="header-contentBox__navBox">
+        <a id="hiddenArea" onclick="drower()"></a>
+        <a id="menuDrower" onclick="drower()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="header-list__sp" id="menuText">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./about.html">POCについて</a></li>
+          <li><a href="../index.html#product">プロダクト</a></li>
+          <li><a href="./impact.html">インパクト</a></li>
         </nav>
       </div>
     </header>
-    <h1>プレオーガニックコットンについて</h1>
-    <p>プレオーガニックコットンプログラムは、オーガニックな世の中へシフトしていくプロジェクトとして立ち上げました。
-      インドのコットン畑で使われる農薬を無くしていくよう取り組んでおり、買い手であるあなたがプレオーガニックコットンの製品を買うことで、インドの農民のオーガニックへの選択を支援することができます。
-      
-      誰もが毎日袖を通しているコットンは、化学繊維と異なり自然環境で生育できる、サステナブルな素材です。しかし、一番身近な衣料素材ですが、どこで誰が作っていて環境にどんな影響を与えているか、ほとんどの人が知りません。
-      そこで、作り手の農家、一件一件の顔を見ながら、綿の種まきから、収穫まで、コットン畑と向き合い、作り手の「農薬を使わないでコットン育てたい」という思いを支援したいと思い、POCが生まれました。
-      
-      POCは、作る手の農薬に頼らない努力と、買い手が現実を見てよい選択するという、作るひとと、買うひと両者が協力して、オーガニックな世の中へシフトしていくためのプログラムです。</p>
+    <div class="gradation"></div>
+    <img src="../data/photo/2.jpg" class="background" alt="見出し背景">
+    <div class="text">
+      <h1 class="title">プレオーガニックコットンプログラム</h1>
+      <p class="main_text">「プレオーガニックコットンは、1%のオーガニックを増やすことにつながる取り組み。」<br>
+        最近は、街中でもよく目にするようになった「オーガニックコットン」。それでも、オーガニックコットンの生産量は、世界の綿花総生産量のたった1％程度なのです。私たちは「プレオーガニックコットン(POC)」の活動を通して、インドの農家と世界の消費者を繋ぎ、地球にも人にも優しいオーガニックコットン栽培の拡大に努めています。</p>
+      <h2 class="sub_title">プレオーガニックコットンについて</h2>
+      <p class="main_text">オーガニックコットンとしての認定までに必要な、３年間の無農薬栽培期間に育てられたコットンである「プレオーガニックコットン(POC)」について詳しくお伝えします。POCは、オーガニックコットンに認定される前に収穫された、無農薬で育てられたコットンです。通常、オーガニックの認定を取得するためには、3年間におよぶ移行栽培期間が必要です。オーガニックコットンに移行するまでの3年間、多くの生産者は「収穫量が減る」「それによる収入減」などの様々な課題に直面することになり、オーガニック栽培をあきらめる農家も多く存在します。私たちは、その３年間のオーガニック栽培される綿花（「移行期間綿」とよばれます）を「プレオーガニックコットン」と名付け、オーガニックな世の中へのシフトを後押しするプロジェクトとして立ち上げました。「プレオーガニックコットン(POC)プログラム」を通じて、オーガニック栽培への移行期間に収穫される綿花の流通を促進し、移行期間綿の需要を高めることで、より多くの農家のオーガニックコットンへの積極的な移行をサポートしています。</p>
+    </div>
       <footer class="footer_contentBox">
         <div class="footer_innerBox">
           <nav class="footer_list">
-            <li>プライバシーポリシー</li>
-            <li>利用規約</li>
-            <li>お問い合わせ</li>
-            <li>English</li>
+            <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+            <li><a href="./terms.html">利用規約</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+            <li><a href="../en/index.html">English</a></li>
           </nav>
           <p class="copyright">PRE ORGANIC COTTON PROGRAM ® All Rights Reserved.</p>
         </div>
       </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="../js/main.js"></script>
   </body>
 </html>

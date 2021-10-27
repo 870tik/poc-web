@@ -6,38 +6,32 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 100;
-}
-
 .mv {
   width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../data/photo/2.jpg);
+  height: calc(100vh - 140px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../data/photo/mv.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .mv_textBox {
+  width: 70%;
+  min-width: 1010px;
+  height: 240px;
   color: white;
-  width: 50%;
-  height: 300px;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: auto;
 }
 
 .mv_textBox h1 {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: 500;
+  line-height: 1.2;
   margin: 0;
   text-align: center;
 }
@@ -45,8 +39,9 @@ body {
 .mv_textBox h2 {
   font-size: 24px;
   font-weight: 300;
-  margin: 24px 0 0 0;
+  margin: 24px auto 0;
   text-align: center;
+  line-height: 1.5;
 }
 
 .content_box__left {
@@ -113,7 +108,7 @@ body {
 
 .content_textBox {
   position: absolute;
-  width: calc(50% - 32px);
+  width: 50%;
   height: 250px;
   top: 0;
   bottom: 0;
@@ -193,13 +188,18 @@ body {
   color: white;
 }
 
-.sub_textBox button {
+.sub_textBox_button {
+  display: block;
   width: 280px;
   height: 48px;
   font-size: 16px;
   border-radius: 24px;
   background-color: white;
   border: solid 1px #999999;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+  color: #212121;
 }
 
 .sub_imgBox {
@@ -215,7 +215,7 @@ body {
 .sub_imgBox__img {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/8.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/img.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -239,11 +239,11 @@ body {
 }
 
 .detail_contentBox__left {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/6.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/6.png);
 }
 
 .detail_contentBox__center {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/7.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/7.png);
 }
 
 .detail_contentBox__right {
@@ -280,6 +280,60 @@ body {
   color: white;
 }
 
+.product {
+  padding: 64px 0;
+  background: #E6E6E6;
+
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 64px 0;
+  line-height: 1.2em;
+  letter-spacing: 0.15em;
+}
+
+.product__inner {
+  width: calc(100vw - 128px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.product__inner__img {
+  width: calc((100% - 96px) / 4);
+  height: calc((100vw - 224px) / 4);
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.product__inner__item1 {
+  background-image: url(../data/photo/product-test.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.product__inner__item2 {
+  background-image: url(../data/photo/product-test.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.product__inner__item3 {
+  background-image: url(../data/photo/product-test.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.product__inner__item4 {
+  background-image: url(../data/photo/product-test.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 [data-aos=fade-up] {
   transform: translate3d(0,32px,0);
 }
@@ -292,23 +346,27 @@ body {
   transform: translate3d(-100px,0,0);
 }
 
-@media screen and (max-width: 600px) {
-  .header {
-    height: 60px;
+@media screen and (max-width: 900px) {
+
+  .mv {
+    background-position: right bottom;
+    height: calc(100vh - 80px);
   }
 
   .mv_textBox {
-    width: 85%;
-    height: 264px;
+    width: 90%;
+    min-width: inherit;
+    height: 184px;
   }
 
   .mv_textBox h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .mv_textBox h2 {
     font-size: 16px;
     margin: 16px 0 0 0;
+    width: 100%;
   }
 
   .content_box__left {
@@ -353,6 +411,11 @@ body {
 
   .largeImg {
     width: 100%;
+  }
+
+  .content {
+    width: 100vw;
+    overflow-x: hidden;
   }
 
   .content_textBox {
@@ -408,16 +471,16 @@ body {
     margin: inherit;
     z-index: 2;
   }
-  
+
   .sub_textBox h1 {
     font-size: 24px;
   }
-  
+
   .sub_textBox h2 {
     font-size: 16px;
     margin: 16px 0 32px 0;
   }
-  
+
   .sub_textBox button {
     width: 240px;
     height: 44px;
@@ -426,7 +489,7 @@ body {
     display: block;
     margin: 0 auto;
   }
-  
+
   .sub_imgBox {
     width: 92vw;
     height: 92vh;
@@ -436,11 +499,11 @@ body {
     transition-duration: 0.3s;
     transition-timing-function: ease-out
   }
-  
+
   .sub_imgBox__img {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/8.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/img.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -459,6 +522,8 @@ body {
     width: 100%;
     height: 140px;
     margin: 16px 0;
+    border-radius: 8px;
+    display: block;
   }
 
   .detail_contentBox__text {
@@ -467,5 +532,36 @@ body {
     bottom: 8px;
     font-size: 20px;
     font-weight: 300;
+  }
+
+  .product {
+    padding: 48px 0;
+  }
+
+  .product h2 {
+    font-size: 24px;
+    margin: 0 0 48px 0;
+  }
+
+  .product__inner {
+    width: calc(100vw - 48px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+  .product__inner__img {
+    width: calc((100% - 16px) / 2);
+    height: calc((100vw - 64px) / 2);
+    border-radius: 4px;
+  }
+
+  .product__inner__item1 {
+    margin-bottom: 16px;
+  }
+
+  .product__inner__item2 {
+    margin-bottom: 16px;
   }
 }

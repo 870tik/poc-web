@@ -14,38 +14,54 @@
     <title></title>
     <link rel="icon" href="">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/other.css" type="text/css" />
     <link rel="stylesheet" href="../css/common.css" type="text/css" />
   </head>
   <body>
-    <header class="header_contentBox">
-      <div class="header_innerBox">
-        <a href="../index.html"><img class="header_logo" src="../data/assets/logo.png" alt="POCロゴ"/></a>
-        <nav class="header_list">
-          <li>POC</li>
-          <li>POCについて</li>
-          <li>製品</li>
-          <li>インパクト</li>
+    <header class="header-contentBox">
+      <div class="header-innerBox">
+        <a href="../index.html"><img class="header-logo" src="../data/assets/logo.png" alt="POCロゴ"/></a>
+        <nav class="header-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./about.html">POCについて</a></li>
+          <li><a href="../index.html#product">プロダクト</a></li>
+          <li><a href="./impact.html">インパクト</a></li>
+        </nav>
+      </div>
+      <div class="header-contentBox__navBox">
+        <a id="hiddenArea" onclick="drower()"></a>
+        <a id="menuDrower" onclick="drower()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="header-list__sp" id="menuText">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./about.html">POCについて</a></li>
+          <li><a href="../index.html#product">プロダクト</a></li>
+          <li><a href="./impact.html">インパクト</a></li>
         </nav>
       </div>
     </header>
-    <h1>プレオーガニックコットンについて</h1>
-    <p>プレオーガニックコットンプログラムは、オーガニックな世の中へシフトしていくプロジェクトとして立ち上げました。
-      インドのコットン畑で使われる農薬を無くしていくよう取り組んでおり、買い手であるあなたがプレオーガニックコットンの製品を買うことで、インドの農民のオーガニックへの選択を支援することができます。
-      
-      誰もが毎日袖を通しているコットンは、化学繊維と異なり自然環境で生育できる、サステナブルな素材です。しかし、一番身近な衣料素材ですが、どこで誰が作っていて環境にどんな影響を与えているか、ほとんどの人が知りません。
-      そこで、作り手の農家、一件一件の顔を見ながら、綿の種まきから、収穫まで、コットン畑と向き合い、作り手の「農薬を使わないでコットン育てたい」という思いを支援したいと思い、POCが生まれました。
-      
-      POCは、作る手の農薬に頼らない努力と、買い手が現実を見てよい選択するという、作るひとと、買うひと両者が協力して、オーガニックな世の中へシフトしていくためのプログラムです。</p>
+    <div class="gradation"></div>
+    <img src="../data/photo/2.jpg" class="background" alt="見出し背景">
+    <div class="text">
+      <h1 class="title">わたしたちのミッション</h1>
+      <p class="main_text">「環境や人権に配慮したサステナブルな社会を実現するために、私たちは商品の色やデザインだけではなく、そこに使われている素材や作り方にも目を向けていかなければなりません。作られた製品を手に取られた方々が、自然と世の中を良くしていくことができるようなストーリーを描いているつもりです。また、素材にある背景を理解することで、身に着けている服の意味をさらに感じていただけたら、と考えています。<br><br>多くの人々が毎日袖を通しているコットンは、化学繊維と異なり自然環境で生育できる身近な衣料素材ですが、どこで誰が作っていて環境にどんな影響を与えているのか、まだ多くの人が知りません。<br><br>そこで、作り手の農家一軒一軒の顔を見ながら、種まきから収穫までコットン畑と向き合い、「農薬を使わないでコットン育てたい」という作り手の思いを支援したいと思い、POCが生まれました。<br><br>オーガニックコットンと同じ栽培方法で育てられるPOCは、作り手の農薬に頼らない努力と、買い手の現実をみつめた良い選択という、作るひとと買うひと両者の協力によって、オーガニックな世の中へシフトしていくためのプログラムです。<br><br>一般の消費者が「意味のある選択」をすることで、環境や生産者の生活改善にもつながります。<br><br>私たちPOC事務局は、こういった農家の支えになるビジネスモデルをデザインし、インドの農家が安心して綿作を続けられるように、そして少しでも多くの消費者にPOC/オーガニック綿を届けることをミッションにしています。</p>
+    </div>
       <footer class="footer_contentBox">
         <div class="footer_innerBox">
           <nav class="footer_list">
-            <li>プライバシーポリシー</li>
-            <li>利用規約</li>
-            <li>お問い合わせ</li>
-            <li>English</li>
+            <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+            <li><a href="./terms.html">利用規約</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+            <li><a href="../en/index.html">English</a></li>
           </nav>
           <p class="copyright">PRE ORGANIC COTTON PROGRAM ® All Rights Reserved.</p>
         </div>
       </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="../js/main.js"></script>
   </body>
 </html>
