@@ -76,11 +76,11 @@ body {
 }
 
 .smallImg {
-  width: calc(40% - 32px);
+  width: calc(50% - 32px);
 }
 
 .middiumImg {
-  width: calc(55% - 32px);
+  width: calc(60% - 32px);
 }
 
 .largeImg {
@@ -239,15 +239,15 @@ body {
 }
 
 .detail_contentBox__left {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/6.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/environment.png);
 }
 
 .detail_contentBox__center {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/7.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/health.png);
 }
 
 .detail_contentBox__right {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/9.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(../data/photo/income.png);
 }
 
 .detail_contentBox__img {
@@ -448,6 +448,7 @@ body {
   .content_textBox__button {
     width: 160px;
     height: 44px;
+    line-height: 44px;
     font-size: 14px;
     border-radius: 22px;
     display: block;

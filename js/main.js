@@ -11,7 +11,6 @@ window.onload = function() {
 
 window.onscroll = function() {
   var py = subContent.getBoundingClientRect().top;
-  var scroll = window.pageYOffset;
   var height = subContent.getBoundingClientRect().height;
   if(py < height - height / 10 && ((height - py) / height) <= 1) {
     subContent.style.width = (0.92 + ((height - py) / height)/10 * 0.8) * 100 + 'vw';
