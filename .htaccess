@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 AuthUserfile /app/.htpasswd
-=======
-AuthUserfile app/.htpasswd
->>>>>>> 5721f57f685fa5b16509641b80601bf65703d746
 AuthGroupfile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
