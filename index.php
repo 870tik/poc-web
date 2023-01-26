@@ -1,1 +1,5 @@
-<?php include_once( "index.html" ); ?>
+// sample.php内
+
+<?php
+  echo __FILE__;
+?>
