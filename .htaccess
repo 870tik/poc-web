@@ -1,4 +1,4 @@
-AuthUserfile /app/.htpasswd
+AuthUserfile https://870tik.github.io/poc-web/.htpasswd
 AuthGroupfile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
